@@ -1,0 +1,4 @@
+<resources>
+    <string name="maps_api_key">{Google Maps Api key}</string>
+    <string name="weather_url">https://api.openweathermap.org/data/2.5/weather?lat=%1$s&amp;lon=%2$s&amp;units=metric&amp;appid={OpenWeatherMap API Key}</string>
+</resources>

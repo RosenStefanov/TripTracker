@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripActivity">
+
+    <TextView
+        android:id="@+id/start_location_text_TA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_location_text_TA"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"></TextView>
+
+    <TextView
+        android:id="@+id/finish_location_text_TA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/finish_location_text_TA"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_location_text_TA"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/trip_distance_text_TA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/trip_distance_text_TA"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_location_text_TA"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/trip_date_text_TA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/date_of_trip_TA"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_distance_text_TA"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <FrameLayout
+        android:id="@+id/btn_save_trip_FL_TA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_date_text_TA"
+        app:layout_constraintVertical_bias="0.291">
+        <Button
+            android:id="@+id/btn_save_trip_TA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/save_trip_btn_text" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calc_cost_FL_TA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_date_text_TA"
+        app:layout_constraintVertical_bias="0.15">
+        <Button
+            android:id="@+id/btn_calc_cost_TA"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/TA_calc_cost_btn_text"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_show_weather_FL_TA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_trip_FL_TA"
+        app:layout_constraintVertical_bias="0.15">
+        <Button
+            android:id="@+id/btn_show_weather_TA"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/TA_show_current_weather_btn_text"
+            android:visibility="gone"
+             />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_del_trip_FL_TA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_weather_FL_TA"
+        app:layout_constraintVertical_bias="0.25">
+        <Button
+            android:id="@+id/btn_del_trip_TA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TA_del_btn_text"
+            android:visibility="gone"
+             />
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentCalCostView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout="@layout/fragment_calc_cost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TripTracker</string>
+    <string name="title">Trip Tracker</string>
+    <string name="create_trip_btn">Create Trip</string>
+    <string name="dialog_message">Choose to set this location as the Start location or the Finish location of your trip</string>
+    <string name="info_text_CTA">Choose your start and finish location from the map</string>
+    <string name="back">Back</string>
+    <string name="choose_date_of_trip">Choose date:</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="CTA_no_start_location_text">You need to select the start location before you can create a trip</string>
+    <string name="CTA_no_finish_location_text">You need to select the finish location before you can create a trip</string>
+    <string name="CTA_no_finish_and_start_location_text">You need to select the finish and start locations before you can create a trip</string>
+    <string name="start_location_text_TA">Start location of the trip: \n %1$s</string>
+    <string name="finish_location_text_TA">Finish location of the trip: \n %1$s</string>
+    <string name="trip_distance_text_TA">Distance of the trip: \n %1$s  km</string>
+    <string name="CTA_no_date_text">You need to select a date for the trip</string>
+    <string name="date_of_trip_TA">Date of trip: \n %1$s</string>
+    <string name="save_trip_btn_text">Save Trip</string>
+    <string name="TA_save_toast_text">The trip was saved!</string>
+    <string name="MA_saved_trips_btn_text">Saved Trips</string>
+    <string name="TA_calc_cost_btn_text">Calculate Cost</string>
+    <string name="TA_del_btn_text">Delete</string>
+    <string name="TA_show_current_weather_btn_text">Show Current Weather</string>
+    <string name="CCF_cost_calc_text">Trip Cost Calculator</string>
+    <string name="CCF_distance_text">Distance: \n %1$s  km</string>
+    <string name="CCF_fuel_price_text">Price per Liter of fuel</string>
+    <string name="CCF_calc_cost_btn_text">Calculate Cost</string>
+    <string name="CCF_trip_cost">Cost of the trip: </string>
+    <string name="WF_title">Current weather for the locations</string>
+    <string name="WF_first_temp_text">%1$s °C</string>
+    <string name="WF_second_temp_text">%1$s °C</string>
+    <string name="WF_first_info_text">%1$s feels like %2$s °C</string>
+    <string name="WF_second_info_text">%1$s feels like %2$s °C</string>
+    <string name="NotificationChannelName">NotificationChannel</string>
+    <string name="Notification_channel_description">NotificationChannelDescription</string>
+    <string name="notification_title">Trip Saved</string>
+    <string name="notification_text">%1$s - %2$s Date: %3$s</string>
+    <string name="ok_string">OK</string>
+    <string name="no_GPS_message">Please turn on the device location</string>
+
+
+</resources>
