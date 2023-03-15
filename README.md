@@ -33,3 +33,17 @@ Generate your own OpenWeatherMap API key
   
   ## Usage
   
+  ### On Start
+  After starting the app the main screen will open in which you will have the option to create a new trip or open all of the saved trips.
+  ![start_screen - Copy](https://user-images.githubusercontent.com/95367525/225417449-cac35d9a-c003-4577-9779-73c4a32822a9.PNG)
+  ### Creating A Trip
+  After clicking "CREATE TRIP" the create trip activity will open in which the user will be presented with a map using which they will be able to select their starting and finish locations by clicking on the map or using the text input field. There is a choose date field in which the user has to select the date of the trip. After the user has selected the starting and finish locations and the date of the trip by pressing the "CREATE TRIP" button, a new window opens with the information for the trip and a "SAVE TRIP" button with which the user can save the trip to the database.
+  ![create_trip](https://user-images.githubusercontent.com/95367525/225423070-8410a001-3cb2-4c41-81ee-c62eb7cf47b3.PNG) &emsp; &emsp; &emsp;    &emsp; ![new_trip_data](https://user-images.githubusercontent.com/95367525/225423203-ae4cf8a1-19a5-4a2e-a67b-a61a602834d5.PNG)
+### Saved Trips
+After clicking on the "SAVED TRIPS" button on the starting screen the user will be presented with a list of all of their saved strips. The user can click on a trip to open it and view the information for that trip and will have the options to calculate the cost of the trip, view the current weather on the start and finish locations and delete the trip from the database.
+
+![trips_list](https://user-images.githubusercontent.com/95367525/225426485-f83961bb-9e87-4e9d-80c0-f6f4cf46bb35.PNG) &emsp; &emsp; &emsp;    &emsp; ![trip_info](https://user-images.githubusercontent.com/95367525/225426791-877aac53-abfd-402d-ada4-0c32978a9aa3.PNG)
+
+
+
+
